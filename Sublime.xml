@@ -1,8 +1,31 @@
 <keymap version="1" name="Sublime" parent="$default">
+  <action id="$Copy">
+    <keyboard-shortcut first-keystroke="meta c" />
+  </action>
+  <action id="$Cut">
+    <keyboard-shortcut first-keystroke="ctrl x" />
+    <keyboard-shortcut first-keystroke="shift delete" />
+    <keyboard-shortcut first-keystroke="meta x" />
+  </action>
+  <action id="$Paste">
+    <keyboard-shortcut first-keystroke="meta v" />
+  </action>
+  <action id="$Redo">
+    <keyboard-shortcut first-keystroke="shift ctrl z" />
+    <keyboard-shortcut first-keystroke="shift alt back_space" />
+    <keyboard-shortcut first-keystroke="shift meta z" />
+  </action>
+  <action id="$SelectAll">
+    <keyboard-shortcut first-keystroke="meta a" />
+  </action>
   <action id="$Undo">
-    <keyboard-shortcut first-keystroke="alt back_space" />
     <keyboard-shortcut first-keystroke="meta z" />
   </action>
+  <action id="ActivateTerminalToolWindow">
+    <keyboard-shortcut first-keystroke="alt f12" />
+    <keyboard-shortcut first-keystroke="meta t" />
+  </action>
+  <action id="Arrangement.Rule.Match.Condition.Move.Down" />
   <action id="Back">
     <mouse-shortcut keystroke="button4" />
     <keyboard-shortcut first-keystroke="ctrl minus" />
@@ -20,6 +43,11 @@
   <action id="CollapseRegion">
     <keyboard-shortcut first-keystroke="shift ctrl open_bracket" />
   </action>
+  <action id="CommentByLineComment">
+    <keyboard-shortcut first-keystroke="ctrl slash" />
+    <keyboard-shortcut first-keystroke="ctrl divide" />
+    <keyboard-shortcut first-keystroke="meta slash" />
+  </action>
   <action id="CompareDirs" />
   <action id="CompareJars" />
   <action id="CompareTwoFiles" />
@@ -31,14 +59,36 @@
     <keyboard-shortcut first-keystroke="f2" />
     <keyboard-shortcut first-keystroke="alt enter" />
   </action>
+  <action id="Console.TableResult.NavigateExportedAction">
+    <keyboard-shortcut first-keystroke="alt f7" />
+  </action>
   <action id="Console.TableResult.NextPage" />
   <action id="Console.TableResult.PreviousPage" />
   <action id="Console.TableResult.Reload" />
   <action id="DatabaseView.CopyAction" />
   <action id="DatabaseView.ShowDiff" />
+  <action id="Diff.PrevChange" />
   <action id="Diff.UpdatedFiles" />
+  <action id="Editor Copy">
+    <keyboard-shortcut first-keystroke="meta c" />
+  </action>
+  <action id="Editor Cut">
+    <keyboard-shortcut first-keystroke="meta x" />
+  </action>
+  <action id="Editor Paste">
+    <keyboard-shortcut first-keystroke="meta v" />
+  </action>
+  <action id="Editor Redo">
+    <keyboard-shortcut first-keystroke="shift meta z" />
+  </action>
+  <action id="Editor SelectAll">
+    <keyboard-shortcut first-keystroke="meta a" />
+  </action>
   <action id="Editor Undo">
     <keyboard-shortcut first-keystroke="meta z" />
+  </action>
+  <action id="EditorAddOrRemoveCaret">
+    <mouse-shortcut keystroke="meta button1" />
   </action>
   <action id="EditorChooseLookupItem" />
   <action id="EditorChooseLookupItemCompleteStatement" />
@@ -53,14 +103,12 @@
   <action id="EditorCodeBlockStart" />
   <action id="EditorCodeBlockStartWithSelection" />
   <action id="EditorCompleteStatement" />
-  <action id="EditorDeleteLine">
-    <keyboard-shortcut first-keystroke="shift ctrl k" />
-  </action>
-  <action id="EditorDeleteToLineEnd">
-    <keyboard-shortcut first-keystroke="ctrl k" second-keystroke="ctrl k" />
-  </action>
+  <action id="EditorDeleteLine" />
   <action id="EditorDeleteToLineStart">
-    <keyboard-shortcut first-keystroke="ctrl k" second-keystroke="ctrl back_space" />
+    <keyboard-shortcut first-keystroke="meta back_space" />
+  </action>
+  <action id="EditorDeleteToWordStart">
+    <keyboard-shortcut first-keystroke="alt back_space" />
   </action>
   <action id="EditorDuplicate">
     <keyboard-shortcut first-keystroke="shift ctrl d" />
@@ -72,11 +120,35 @@
   <action id="EditorJoinLines">
     <keyboard-shortcut first-keystroke="ctrl j" />
   </action>
+  <action id="EditorLineEnd">
+    <keyboard-shortcut first-keystroke="meta right" />
+  </action>
+  <action id="EditorLineEndWithSelection">
+    <keyboard-shortcut first-keystroke="shift meta l" />
+  </action>
+  <action id="EditorLineStart">
+    <keyboard-shortcut first-keystroke="meta left" />
+  </action>
+  <action id="EditorMoveToPageBottom">
+    <keyboard-shortcut first-keystroke="meta down" />
+  </action>
+  <action id="EditorMoveToPageTop">
+    <keyboard-shortcut first-keystroke="meta up" />
+  </action>
+  <action id="EditorNextWord">
+    <keyboard-shortcut first-keystroke="ctrl right" />
+    <keyboard-shortcut first-keystroke="alt right" />
+  </action>
+  <action id="EditorPreviousWord">
+    <keyboard-shortcut first-keystroke="ctrl left" />
+    <keyboard-shortcut first-keystroke="alt left" />
+  </action>
   <action id="EditorSelectWord">
     <keyboard-shortcut first-keystroke="ctrl l" />
   </action>
   <action id="EditorSplitLine">
     <keyboard-shortcut first-keystroke="shift enter" />
+    <keyboard-shortcut first-keystroke="enter" />
   </action>
   <action id="EditorStartNewLine">
     <keyboard-shortcut first-keystroke="ctrl enter" />
@@ -108,16 +180,17 @@
   </action>
   <action id="Find">
     <keyboard-shortcut first-keystroke="ctrl f" />
+    <keyboard-shortcut first-keystroke="meta f" />
+  </action>
+  <action id="FindInPath">
+    <keyboard-shortcut first-keystroke="shift ctrl f" />
+    <keyboard-shortcut first-keystroke="shift meta f" />
   </action>
   <action id="FindNext">
     <keyboard-shortcut first-keystroke="f3" />
   </action>
   <action id="FindPrevious">
     <keyboard-shortcut first-keystroke="shift f3" />
-  </action>
-  <action id="FindUsages">
-    <keyboard-shortcut first-keystroke="alt f7" />
-    <keyboard-shortcut first-keystroke="shift meta f" />
   </action>
   <action id="Forward">
     <mouse-shortcut keystroke="button5" />
@@ -155,12 +228,15 @@
   <action id="ManageRecentProjects">
     <keyboard-shortcut first-keystroke="ctrl meta p" />
   </action>
+  <action id="MethodDown" />
   <action id="NextOccurence" />
+  <action id="NextTab" />
   <action id="NextTemplateVariable">
     <keyboard-shortcut first-keystroke="tab" />
   </action>
   <action id="ParameterInfo" />
   <action id="PreviousOccurence" />
+  <action id="PreviousTab" />
   <action id="Replace">
     <keyboard-shortcut first-keystroke="ctrl h" />
   </action>
@@ -171,6 +247,7 @@
   </action>
   <action id="SendEOF" />
   <action id="ShowBookmarks" />
+  <action id="ShowContent" />
   <action id="SwitchApply">
     <keyboard-shortcut first-keystroke="shift alt enter" />
   </action>
@@ -196,5 +273,6 @@
   <action id="TypeHierarchy" />
   <action id="Uml.ShowDiff" />
   <action id="ViewSource" />
+  <action id="XDebugger.MoveWatchDown" />
   <action id="hg4idea.push" />
 </keymap>
